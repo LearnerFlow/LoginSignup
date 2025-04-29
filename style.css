@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #7F00FF, #E100FF);
+  }
+  
+  body.login {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+  }
+  
+  body.signup {
+    background: linear-gradient(to right, #f12711, #f5af19);
+  }
+  
+  .form-container {
+    background: white;
+    padding: 40px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: slide-in 0.8s ease-in;
+  }
+  
+  @keyframes slide-in {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #7F00FF;
+  }
+  
+  button {
+    background-color: #7F00FF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #5f00cc;
+  }
+  
+  a {
+    color: #7F00FF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
